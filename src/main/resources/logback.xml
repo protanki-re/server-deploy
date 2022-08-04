@@ -12,4 +12,5 @@
 
   <logger name="io.netty" level="INFO" />
   <logger name="ktor.application" level="INFO" />
+  <logger name="org.eclipse.jgit" level="INFO" />
 </configuration>

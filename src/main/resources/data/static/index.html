@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>ProTanki Deploy</title>
+
+  <link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+  <button id='clear-logs'>Clear logs</button>
+  <div class='row'>
+    <button id='source-system'>System</button>
+    <button id='source-git'>Git</button>
+    <button id='source-gradle'>Gradle</button>
+    <button id='source-server'>Server</button>
+  </div>
+  <div class='git'>
+    <span>Git: </span>
+    <span id='git-state'>...</span>
+
+    <button id='update-git'>Update</button>
+  </div>
+  <div class='row'>
+    <span>Gradle: </span>
+    <span id='gradle-state'>...</span>
+
+    <button id='build-gradle'>Build</button>
+  </div>
+  <div class='row'>
+    <span>Server: </span>
+    <span id='server-state'>...</span>
+
+    <button id='start-server'>Start</button>
+    <button id='stop-server'>Stop</button>
+  </div>
+
+  <pre id='logs'></pre>
+
+  <script src='js/main.js'></script>
+</body>
+</html>

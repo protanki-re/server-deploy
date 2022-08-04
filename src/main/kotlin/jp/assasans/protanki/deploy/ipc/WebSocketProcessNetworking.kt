@@ -4,6 +4,7 @@ import com.squareup.moshi.Moshi
 import io.ktor.server.routing.*
 import io.ktor.server.websocket.*
 import io.ktor.websocket.*
+import jp.assasans.protanki.deploy.web.IWebServer
 import mu.KotlinLogging
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

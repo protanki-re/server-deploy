@@ -29,7 +29,7 @@ dependencies {
   implementation("io.ktor:ktor-client-core:2.0.0-beta-1")
   implementation("io.ktor:ktor-client-cio:2.0.0-beta-1")
 
-  implementation("org.zeromq:jeromq:0.5.2")
+  implementation("org.eclipse.jgit:org.eclipse.jgit:6.2.0.202206071550-r")
 
   implementation("com.squareup.moshi:moshi:1.13.0")
   implementation("com.squareup.moshi:moshi-kotlin:1.13.0")
@@ -113,6 +113,11 @@ tasks {
     // Copy runtime resources to the jar directory
     from("$projectDir/src/main/resources/data")
     into("$buildDir/data")
+  }
+
+  register<Sync>("copyDependencies") {
+    from(configurations.default)
+    into("$buildDir/dependencies")
   }
 }
 
